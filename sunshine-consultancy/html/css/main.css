@@ -1,0 +1,602 @@
+/*GLOBAL CSS*/
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.content-container{
+    width: 1080px;
+    margin: 0 auto;
+    overflow: auto;
+}
+.content{
+  clear:both;
+  padding: 15px;
+}
+.content-center{
+  text-align: center;
+}
+
+.overlay{
+  background: rgba(0,0,0,.5);
+  width: 100%;
+}
+
+.heading{
+  display: inline-block;
+}
+.link-more a{
+  color: lightslategray;
+  font-weight:bold;
+  font-size: 16px;
+}
+.link-more a:visited{
+  color: lightslategray;
+}
+.link-more a:hover, #home-nav:hover{
+  color: darkgray;
+}
+p,h3{
+  color:white;
+}
+
+.hero{
+  height: 70%;
+  width: 100%;
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+  color: white;
+  position: relative;
+}
+.hero-text{
+  position: relative;
+  float:left;
+  display: inline-block;
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+}
+.hero-text img{
+  display: inline-block;
+  height: 24px;
+  margin: 3px 0px 0px;
+}
+.hero-text h1{
+  display: inline-block;
+  font-size: 20px;
+}
+.hero a{
+  text-decoration: none;
+}
+
+.hero a:visited{
+  color: white;
+}
+.title{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  display: inline-block;
+  font-size: 30px;
+  text-align: center;
+}
+
+.fixed {
+  position: fixed!important;
+  top: 0!important;
+  z-index: 2!important;
+  width: 100%!important;
+}
+
+
+/*FOOTER*/
+footer{
+  clear: both;
+  background: #222222;
+  height: 150px;
+  color: white;
+  padding: 15px;
+  overflow: hidden;
+}
+footer img{
+  display: inline-block;
+  width: 25px;
+  margin: 5px 5px 0 5px;
+}
+footer a img:hover{
+  transform: translateY(5%);
+}
+footer h3{
+  display: inline-block;
+}
+.footer-social-media img{
+  margin: 15px;
+  width: 50px;
+}
+.footer-social-media img:hover{
+  translate-y: 5px;
+}
+.meta-copyright{
+  float: left;
+}
+.meta-team{
+  float: right;
+}
+.hero-overlay{
+  overflow: hidden;
+}
+/*HOME PAGE*/
+.overlay-home{
+  height: 100%;
+}
+#hero-homepage{
+  height:100vh;
+  width: 100%;
+  background: url('../img/layout/hero-homepage2.jpg') no-repeat center center;
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+  color: white;
+}
+.hero-text-home{
+  position: relative;
+  top: 25%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  display: inline-block;
+  font-size: 30px;
+  text-align: center;
+}
+.hero-text-home h1{
+  display: inline-block;
+}
+.hero-text-home h3{
+  font-family: 'Allura', cursive;
+
+}
+.hero-text-home img{
+    display: inline-block;
+    height: 50px;
+}
+.link-forum{
+  display: block;
+  color:white;
+  position:absolute;
+  right: 10px;
+  top: 10px;
+}
+.nav{
+  background: #222222;
+  color: white;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  overflow-x: hidden;
+  box-shadow: 0 0 0 5px #222222;
+}
+.hero-homepage a{
+  text-decoration: none;
+}
+
+.hero-homepage a:visited{
+  color: white;
+}
+.nav ul{
+  list-style: none; position: relative; float: left; display: block; left: 50%;
+}
+
+.nav li{
+  position: relative; float: left; display: block; right: 50%;
+  padding: 15px;
+  font-weight: bold;
+  color:white;
+}
+.nav li:hover,
+.link-forum h3:hover{
+  color: darkgray;
+}
+.yellow{
+  background: #eac224;
+}
+
+.link-more{
+  margin: 10px;
+}
+
+.link-more a{
+  text-decoration: none;
+}
+
+
+/*HOME WHAT WE DO*/
+#what-we-do-text{
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 500px;
+}
+
+#what-we-do-text h3{
+  margin: 5px 0;
+}
+#what-we-do-video{
+  position: relative;
+  float: right;
+  display: inline-block;
+  width: 50%;
+  overflow-x: hidden;
+  margin: 60px 0;
+}
+
+#about-us{
+  width: 100%;
+  background: url('../img/layout/beach.jpg') no-repeat center center;
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+  color: white;
+}
+
+/*HOME ABOUT US*/
+#about-us-text{
+  text-align:center;
+}
+#about-us img{
+  width: 275px;
+  float: left;
+  margin: 0 20px;
+}
+
+#about-us .subtext{
+  margin: 60px 0;
+}
+
+/*HOME ABOUT US*/
+#contact-us-form,
+#contact-us-address{
+  display: inline-block;
+  float:left;
+  width:50%;
+}
+#contact-us-form input{
+  width: 50%;
+}
+#contact-us-form textarea{
+  height: 220px;
+  width: 100%;
+}
+
+#contact-us-form textarea,
+#contact-us-form input{
+  border-radius: 5px;
+  margin: 5px 0;
+}
+#contact-us-address-container{
+  padding: 20px;
+}
+
+/*SERVICE PAGE*/
+.services-hero{
+  background: url('../img/layout/hero-services.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.service{
+  width: 50%;
+  height: 250px;
+  float: left;
+  background-size: cover;
+}
+.service h2{
+  color: white;
+  position: relative;
+  top: 45%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  display: inline-block;
+  text-align: center;
+}
+.service .overlay{
+  height: 100%;
+}
+.content-services{
+  padding:0;
+}
+#service-software{
+  background:url('../img/content/services/software.jpg')no-repeat center center;
+}
+#service-management{
+  background:url('../img/content/services/management.jpg')no-repeat center center;
+}
+#service-analysis{
+  background:url('../img/content/services/analysis.jpg')no-repeat center center;
+}
+#service-insight{
+  background:url('../img/content/services/expertise.jpg')no-repeat center center;
+}
+
+.get-in-touch{
+  background: #eac224;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+}
+.package a{
+  text-decoration: none;
+}
+.package .get-in-touch h3:hover{
+  color: white;
+}
+/*CONTACT US PAGE*/
+.contact-hero{
+  background: url('../img/layout/hero-contact.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+#contact-info, #contact-map{
+  width: 50%;
+  display: inline-block;
+  float: left;
+  position: relative;
+  overflow-x: hidden;
+  margin: 5px 0;
+}
+.contact-form{
+  width: 80% !important;
+}
+
+#packages-container{
+  background: url('../img/layout/packages-bg.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+#packages{
+  position: relative;
+}
+#packages h1{
+  color: white;
+}
+.package{
+  background: white;
+  width: 30%;
+  float: left;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+.package li{
+  list-style: none;
+}
+.package h3{
+  color: black;
+}
+#bronze{
+    background: url('../img/content/services/bronze.jpg') no-repeat center center;
+}
+#silver{
+  background: url('../img/content/services/silver.jpg') no-repeat center center;
+}
+#gold{
+  background: url('../img/content/services/gold.jpg') no-repeat center center;
+}
+#bronze,#silver,#gold{
+  background-size: cover;
+  background-position: center center;
+  height: 310px;
+  width: 100%;
+  border-radius: 100%;
+}
+
+#testimonials h2{
+  color: white;
+}
+
+
+#testimonials img{
+  display: inline-block;
+  float: left;
+  width: 180px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+.testimonial{
+  display: inline-block;
+  float: left;
+  margin: 5px 10px;
+}
+
+/*About-Us Page*/
+.about-hero{
+  background: url('../img/layout/hero-about.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+#meet-the-team img{
+  border-radius: 100%;
+}
+
+#meet-the-team em,
+#meet-the-team h2,
+#our-story h2{
+  color:white;
+}
+
+#our-story-hero{
+  background: url('../img/layout/about-sun.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+#our-story h2,
+#our-story p{
+  text-align: center;
+}
+
+/*Forum CSS*/
+
+/*CSS for header/navigation bar. */
+header{
+	width: 100%;
+	height: 60px;
+	background-color: #222222;
+  margin-bottom: 5px;
+}
+
+.overlay-forum{
+  height: 100%;
+}
+
+.hero{
+  height: 70%;
+  width: 100%;
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+  color: white;
+  position: relative;
+}
+#hero-forum{
+  height: 50vh;
+  width: 100%;
+  background: url('../img/layout/hero-homepage2.jpg') no-repeat center center;
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+  color: white;
+}
+
+#hero-text-forum{
+  position: relative;
+  float:left;
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+  top: 25%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  display: inline-block;
+  font-size: 30px;
+  text-align: center;
+}
+nav ul{
+	float: right;
+	margin-top: 20px;
+	margin-right: 50%;
+}
+nav ul li {
+	list-style: none;
+	float: left;
+	margin-right: 20px;
+}
+
+nav ul li a{
+	color: #fff;
+	font-family: Arial;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+body{
+	background: #eac224;
+}
+
+.content-container{
+    width: 1080px;
+    margin: 0 auto;
+    overflow: auto;
+}
+#body .content-container{
+  padding: 10px;
+}
+
+/* CSS for login and reistration page */
+.register_and_sign_in_table
+{
+	width: 100%;
+	height: 30%;
+  text-align: left;
+}
+
+.table_header_CA{
+	width: 50%;
+  text-align: left;
+}
+.table_header_SI{
+	width:40%;
+  text-align: left;
+}
+.table_header_GV{
+	width: 10%;
+  text-align: left;
+}
+.input_register{
+	text-align: right;
+	margin-right: 40%;
+}
+
+.input_signin{
+	text-align: right;
+	margin-right: 38%;
+}
+
+
+/*CSS for index page including the main table showing the diffrent topics */
+.topics_table
+{
+	width: 90%;
+	height: 40%;
+	text-align: center;
+}
+.table_headers_Topics
+{
+	height:50px;
+}
+.A_Topic_TR,
+.A_Topic_TR a{
+  color: white;
+  text-decoration: none;
+}
+
+.A_Topic_TR
+{
+	padding: 15px;
+	height: 70px;
+	width: 80%;
+	background-color: #222222;
+	border-bottom: 1px;
+
+}
+.A_Topic_TR:hover
+{
+	background-color: darkgray;
+}
+
+.Topic_data
+{
+	border-bottom: 1px solid #ddd;
+}
+
+/*View Topic*/
+.table{
+  margin: 0 auto;
+  background: #222222;
+  color: white;
+}
+.table, .table th, .table td{
+    border: 0px;
+    border-collapse: 0px;
+}
+.table a{
+  color: white;
+  text-decoration: none;
+}
